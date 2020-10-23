@@ -4,10 +4,7 @@ title: About me
 subtitle: Front-End Programmer
 ---
 
-# Programmer
-## HONG KONG
-
-Keith Chan.
+### Programmer
 
 Programming Language: 
 - VueJS
@@ -19,5 +16,3 @@ Skills:
 - RESTful API
 - React Native
 - Ionic
-
-### My story
