@@ -4,13 +4,20 @@ title: About me
 subtitle: Front-End Programmer
 ---
 
-My name is Keith Chan. I have the following qualities:
+# Programmer
+## HONG KONG
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Keith Chan.
 
-What else do you need?
+Programming Language: 
+- VueJS
+- AngularJS
+- Node.js
+- C#
+
+Skills:
+- RESTful API
+- React Native
+- Ionic
 
 ### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
