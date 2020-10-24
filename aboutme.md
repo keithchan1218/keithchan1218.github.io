@@ -6,7 +6,7 @@ subtitle: Front-End Programmer
 
 ### KEITH CHAN
 
-<img src="/assets/img/keith.jpg" alt="Avatar" class="vertical-align: middle; width: 50px; height: 50px; border-radius: 50%;">
+![keith-icon](/assets/img/keith.jpg)
 
 Keith is a front-end programmer and work in IT industry for from June 2019 to present. 
 He is fimilar with lots of the front-end programming languages and tools.
