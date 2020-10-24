@@ -2,6 +2,9 @@
 layout: page
 title: About me
 subtitle: Front-End Programmer
+html_document:
+     css: /assets/css/keith.css
+     self_contained: no
 ---
 
 ### KEITH CHAN
