@@ -31,3 +31,13 @@ Including CRUD-like request methods, routing and JWT token approach.
 - AngularJS
 - Ionic
 - React Native
+
+### To-do List
+- [x] VueJS
+- [x] API
+- [ ] React
+- [ ] Login System
+- [ ] Messager App
+- [ ] Unit Test
+- [ ] Database Architecture
+- [ ] Cyber Security
