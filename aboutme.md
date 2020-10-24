@@ -9,8 +9,6 @@ html_document:
 
 ### KEITH CHAN
 
-![keith-icon](/assets/img/keith.jpg)
-
 Keith is a front-end programmer and work in IT industry from June 2019 to present. 
 He is familiar with lots of the front-end programming languages and tools.
 
