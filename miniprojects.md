@@ -10,12 +10,11 @@ I built several small side projects for programming learning and development.
 Feel free to have a try and comment on it for better improvement. 😄
 
 #### REST API 🧩
-Basic RESTful style API with Express
+- Basic RESTful style API with Express - [LINK](https://github.com/keithchan1218/rest-api-express)
+- Advanced API integrate with MySQL - [LINK](https://github.com/keithchan1218/rest-api-mysql)
 
-[Here is my GitHub Project](https://github.com/keithchan1218/rest-api-express)
-
-#### Login System with Vue 3 🕵🏻
-[Here is my GitHub Project](https://github.com/keithchan1218/vueLogin)
+#### Login System 🕵🏻
+- Vue 3 - [LINK](https://github.com/keithchan1218/vueLogin)
 
 ### Other To-do List 🧾
 - [x] Vue.js
