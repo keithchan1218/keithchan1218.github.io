@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: ABOUT ME
 subtitle: Front-End Programmer
 css: /assets/css/keith.css
 ---
