@@ -7,7 +7,6 @@ css: /assets/css/keith.css
 
 ### Mini Projects
 I built several small side projects for programming learning and development.
-
 Feel free to have a try and comment on it for better improvement. 😄
 
 #### REST API 🧩
