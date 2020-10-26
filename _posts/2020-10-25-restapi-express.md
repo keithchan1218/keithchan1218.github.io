@@ -20,6 +20,6 @@ CRUD-like approach: GET POST PUT DELETE with HTTP request
   });
 ```
 
-See more on my GitHub project: [https://github.com/keithchan1218/rest-api-express](https://github.com/keithchan1218/rest-api-express)
+See more on my GitHub project: [https://github.com/keithchan1218/rest-api-mysql](https://github.com/keithchan1218/rest-api-mysql)
 
 Credit: [bezkoder](https://bezkoder.com/node-js-express-sequelize-mysql/)
