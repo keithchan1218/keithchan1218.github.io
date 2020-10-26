@@ -1,8 +1,8 @@
 ---
 layout: post
 title: REST API with Express
-subtitle: Normal API services
-tags: [API]
+subtitle: MySQL and Express
+tags: [API, MySQL]
 comments: true
 ---
 
@@ -12,7 +12,6 @@ Express is a npm module for us to create API services quickly.
 ***
 #### CRUD
 
-{: .box-note}
 CRUD-like approach: GET POST PUT DELETE with HTTP request
 
 ```javascript
@@ -20,3 +19,7 @@ CRUD-like approach: GET POST PUT DELETE with HTTP request
     res.send('Success');
   });
 ```
+
+See more on my GitHub project: [https://github.com/keithchan1218/rest-api-express](https://github.com/keithchan1218/rest-api-express)
+
+Credit: [bezkoder](https://bezkoder.com/node-js-express-sequelize-mysql/)
