@@ -20,6 +20,28 @@ CRUD-like approach: GET POST PUT DELETE with HTTP request
   });
 ```
 
+#### Architecture
+1. model
+2. controller
+3. route
+
+First, you need to design what is the purpose of your API service.
+
+For example, I choose transportation as my topic. So I defined the class for them.
+> **Bus** 🚌🚏
+>
+> - Name of transportation
+> - How many people hold by the bus
+> - Avaliablity (maybe service in maintenance or other issue)
+
+The next mission: make the configuration with MySQL connection
+
+...
+
+Then use Sequelize module to make CRUD methods
+
+...
+
 See more on my GitHub project: [https://github.com/keithchan1218/rest-api-mysql](https://github.com/keithchan1218/rest-api-mysql)
 
 Credit: [bezkoder](https://bezkoder.com/node-js-express-sequelize-mysql/)
