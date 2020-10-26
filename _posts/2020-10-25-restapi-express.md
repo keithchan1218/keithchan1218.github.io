@@ -27,6 +27,7 @@ If you know how to make regular API, let's keep going 🔥🔥🔥
 
 ***
 ### Get Start
+
 #### NPM packages
 1. express
 2. sequelize
@@ -34,6 +35,7 @@ If you know how to make regular API, let's keep going 🔥🔥🔥
 4. nodemon
 5. body-parser
 6. cors
+
 #### Architecture
 1. model
 2. controller
@@ -68,9 +70,11 @@ module.exports = (sequelize, Sequelize) => {
 ```
 
 Make the configuration with MySQL connection and use Sequelize & MySQL driver
+
 ```
 npm install --save sequelize mysql2
 ```
+
 ```javascript
 const sequelize = new Sequelize('database', 'username', 'password', {
   host: 'localhost',
@@ -82,6 +86,7 @@ Then use Sequelize module to make CRUD methods
 - exports.create (POST)
 - exports.findAll (GET)
 - exports.findOne (GET with name)
+
 ```javascript
 exports.create = (req, res) => {
     // validation
@@ -145,6 +150,7 @@ exports.findOne = (req, res) => {
 ```
 
 Setup routes 
+
 ```javascript
 module.exports = app => {
     const transportation = require("../controllers/transportation.controller");
