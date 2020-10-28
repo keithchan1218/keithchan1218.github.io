@@ -10,8 +10,9 @@ API service is a back-end technique that providing clients database information 
 Express is a npm module for us to create API services quickly.
 
 ***
-### Brief
-Basic API
+## Brief
+
+### Basic API
 CRUD-like approach: GET POST PUT DELETE with HTTP request
 
 ```javascript
@@ -26,31 +27,24 @@ If you are not familar with this basic API setup, please go to my [Basic API pro
 If you know how to make regular API, let's keep going 🔥🔥🔥
 
 ***
-### Get Start
+## Get Start
 
-#### NPM packages
-1. express
-2. sequelize
-3. mysql2
-4. nodemon
-5. body-parser
-6. cors
-
-#### Architecture
+### Architecture
 1. model
 2. controller
 3. route
+#
+#### Step 1 - Model
+First, you need to design the purpose of your API service.
 
-First, you need to design what is the purpose of your API service.
+For example, I choose transportation as my topic. So I defined the **class** for them.
 
-For example, I choose transportation as my topic. So I defined the class for them.
-> **Bus** 🚌🚏
->
-> - Name of transportation
-> - How many people hold by the bus
-> - Avaliablity (maybe service in maintenance or other issue)
-
-After making this module, export it for other files in this project.
+e.g. **Bus** 🚌🚏
+| Item | Detail |
+| ---- | -----|
+| name | Name of transportation |
+| capacity | How many people hold by the bus | 
+| enabled | Avaliability (service in maintenance or other issue) | 
 ```javascript
 module.exports = (sequelize, Sequelize) => {
     const Transportation = sequelize.define("transportation", { // "transportation" will be your table name
@@ -68,11 +62,14 @@ module.exports = (sequelize, Sequelize) => {
     return Transportation;
 };
 ```
+#
+#### Step 2 - DB Connection
+After making this module, export it for other files in this project.
 
-Make the configuration with MySQL connection and use Sequelize & MySQL driver
+Make the configuration with MySQL connection and use Sequelize ORM that you don't need to write query to do normal CRUD action.
 
 ```
-npm install --save sequelize mysql2
+npm install sequelize mysql2 --save
 ```
 
 ```javascript
@@ -81,8 +78,10 @@ const sequelize = new Sequelize('database', 'username', 'password', {
   dialect: 'mysql'
 });
 ```
+#
+#### Step 3 - Controller
 
-Then use Sequelize module to make CRUD methods
+Then use Sequelize CRUD methods
 - exports.create (POST)
 - exports.findAll (GET)
 - exports.findOne (GET with name)
@@ -105,7 +104,6 @@ exports.create = (req, res) => {
     };
 
     // DB Action: save the item to table
-    console.log('00000');
     Transportation.create(item)
         .then(data => {
             res.send(data);
@@ -148,8 +146,8 @@ exports.findOne = (req, res) => {
         });
 };
 ```
-
-Setup routes 
+#
+#### Step 4 - Setup routes 
 
 ```javascript
 module.exports = app => {
