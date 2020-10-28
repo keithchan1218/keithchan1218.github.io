@@ -33,7 +33,9 @@ If you know how to make regular API, let's keep going 🔥🔥🔥
 1. model
 2. controller
 3. route
-#
+
+<br />
+
 #### Step 1 - Model
 First, you need to design the purpose of your API service.
 
@@ -62,7 +64,9 @@ module.exports = (sequelize, Sequelize) => {
     return Transportation;
 };
 ```
-#
+
+<br />
+
 #### Step 2 - DB Connection
 After making this module, export it for other files in this project.
 
@@ -78,7 +82,9 @@ const sequelize = new Sequelize('database', 'username', 'password', {
   dialect: 'mysql'
 });
 ```
-#
+
+<br />
+
 #### Step 3 - Controller
 
 Then use Sequelize CRUD methods
@@ -146,7 +152,9 @@ exports.findOne = (req, res) => {
         });
 };
 ```
-#
+
+<br />
+
 #### Step 4 - Setup routes 
 
 ```javascript
