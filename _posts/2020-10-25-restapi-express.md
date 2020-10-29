@@ -2,7 +2,7 @@
 layout: post
 title: REST API with Express
 subtitle: MySQL and Express
-tags: [API, MySQL]
+tags: [API]
 comments: true
 ---
 
