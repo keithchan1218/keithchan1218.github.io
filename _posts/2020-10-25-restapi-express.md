@@ -43,7 +43,7 @@ For example, I choose transportation as my topic. So I defined the **class** for
 
 e.g. **Bus** 🚌🚏
 | Item | Detail |
-| ---- | -----|
+| ---- | ----- |
 | name | Name of transportation |
 | capacity | How many people hold by the bus | 
 | enabled | Avaliability (service in maintenance or other issue) | 
