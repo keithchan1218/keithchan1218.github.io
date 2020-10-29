@@ -14,8 +14,9 @@ author: Keith Chan
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Mini Projects: "miniprojects"
-  About Me: "aboutme"
+  Mini Projects: "mini-projects"
+  Code Snippets: "code-snippets"
+  About Me: "about-me"
 # Resources:
 #   - Beautiful Jekyll: "https://beautifuljekyll.com"
 #   - Learn markdown: "https://www.markdowntutorial.com/"
