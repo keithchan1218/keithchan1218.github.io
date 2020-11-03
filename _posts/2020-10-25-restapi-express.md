@@ -42,11 +42,13 @@ First, you need to design the purpose of your API service.
 For example, I choose transportation as my topic. So I defined the **class** for them.
 
 e.g. **Bus** 🚌🚏
+
 | Item | Detail |
 | ---- | ----- |
 | name | Name of transportation |
 | capacity | How many people hold by the bus | 
 | enabled | Avaliability (service in maintenance or other issue) | 
+
 ```javascript
 module.exports = (sequelize, Sequelize) => {
     const Transportation = sequelize.define("transportation", { // "transportation" will be your table name
