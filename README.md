@@ -1,8 +1,8 @@
 # Hello World
 This is the GitHub page of Keith Chan.
-He is a programmer and try to make his diary about his programming journey.
+Keith is a front-end programmer and try to make a diary about his programming journey.
 
-If you have any questions or comments, please feel free to email to contact via any social media.
+If you have any questions or comments, please feel free to email or contact via any social media.
 
 Thanks All!
 
