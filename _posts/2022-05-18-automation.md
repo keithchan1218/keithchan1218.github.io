@@ -1,22 +1,25 @@
 ---
-layout: post
 title: Automation with Linux
 subtitle: Ansible & Playbook
-tags: [Automation]
-last-updated: 2022-05-18
+tags:
+  - Automation
+last-updated: 2022-05-18T00:00:00.000Z
 readtime: true
 comments: true
 ---
 
-Ansible is an open-source tool for automating Linux stuff
+# Automation with Linux
 
+Ansible is an open-source tool for automating Linux stuff
 
 ***
 
-## Ansible
+### Ansible
+
 It helps administrators configure their servers with one click. For example, the admin wants to change DNS settings in every single Linux server.
 
 Example: `/etc/resolve.conf`
+
 ```sh
 nameserver 10.0.80.11
 nameserver 10.0.80.12
@@ -24,24 +27,24 @@ nameserver 10.0.80.12
 
 By using Ansible, the admin only need to change the setting on the master server.
 
-<br/>
+\
 
 
+### Get Started
 
-## Get Started
+{: .box-note} **Demo** - using three CentOS 7 VM
 
-{: .box-note}
-**Demo**  - using three CentOS 7 VM
+#### Step 1: Install Ansible
 
-### Step 1: Install Ansible
 1. Enable EPEL repository: `yum install epel-release -y`
 2. Install Ansible: `yum install ansible -y`
 
-### Step 2: Add hosts
+#### Step 2: Add hosts
 
 Add hosts to your master server
 
 `/etc/ansible/hosts`
+
 ```sh
 [myLinux]
 
@@ -54,21 +57,20 @@ ansible_user=root
 ansible_password=password
 ```
 
-{: .box-error}
-**Disclaimer** - Don't use root account for production
+{: .box-error} **Disclaimer** - Don't use root account for production
 
 Skip the SSH key checking
 
 `/etc/ansible/ansible.cfg`
+
 ```sh
 # SSH
 host_key_checking = False
 ```
 
-{: .box-error}
-**Disclaimer** - SSH key is needed for production
+{: .box-error} **Disclaimer** - SSH key is needed for production
 
-### Step 3: Check the connections
+#### Step 3: Check the connections
 
 Use ping to check the connection between servers.
 
@@ -82,11 +84,12 @@ ansible linux -a "reboot"
 
 Done!
 
+### Playbook - Advanced Feature
 
-## Playbook - Advanced Feature
 There are more and more features for you. The YAML file is used to help organize our plays (tasks).
 
 `/etc/anisble/myTask.yml`
+
 ```yml
 # Task: Check for nano
 ---
@@ -103,6 +106,4 @@ We can run the playbook task with `ansible-playbook myTask.yml`. The playbook is
 
 Credit: Networkchuck
 
-<br/>
-
-
+\

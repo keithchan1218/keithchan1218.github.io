@@ -1,18 +1,21 @@
 ---
-layout: post
 title: REST API with Express
 subtitle: MySQL and Express
-tags: [API]
+tags:
+  - API
 comments: true
 ---
 
-API service is a back-end technique that providing clients database information with interface.
-Express is a npm module for us to create API services quickly.
+# REST API with Express
+
+API service is a back-end technique that providing clients database information with interface. Express is a npm module for us to create API services quickly.
 
 ***
-## Brief
 
-### Basic API
+### Brief
+
+#### Basic API
+
 CRUD-like approach: GET POST PUT DELETE with HTTP request
 
 ```javascript
@@ -20,6 +23,7 @@ CRUD-like approach: GET POST PUT DELETE with HTTP request
     res.send('API is running');
   });
 ```
+
 When you type `localhost/api` on the browser, you will see a sentence 'API is running' in a white page
 
 If you are not familiar with this basic API setup, please go to my [Basic API project](https://github.com/keithchan1218/rest-api-express). It will give you a full explanation of REST API and how it works.
@@ -27,27 +31,31 @@ If you are not familiar with this basic API setup, please go to my [Basic API pr
 If you know how to make regular API, let's keep going 🔥🔥🔥
 
 ***
-## Get Start
 
-### Architecture
+### Get Start
+
+#### Architecture
+
 1. model
 2. controller
 3. route
 
-<br />
+\
 
-#### Step 1 - Model
+
+**Step 1 - Model**
+
 First, you need to design the purpose of your API service.
 
 For example, I choose transportation as my topic. So I defined the **class** for them.
 
 e.g. **Bus** 🚌🚏
 
-| Item | Detail |
-| ---- | ----- |
-| name | Name of transportation |
-| capacity | How many people hold by the bus | 
-| enabled | Availability (service in maintenance or other issue) | 
+| Item     | Detail                                               |
+| -------- | ---------------------------------------------------- |
+| name     | Name of transportation                               |
+| capacity | How many people hold by the bus                      |
+| enabled  | Availability (service in maintenance or other issue) |
 
 ```javascript
 module.exports = (sequelize, Sequelize) => {
@@ -67,9 +75,11 @@ module.exports = (sequelize, Sequelize) => {
 };
 ```
 
-<br />
+\
 
-#### Step 2 - DB Connection
+
+**Step 2 - DB Connection**
+
 After making this module, export it for other files in this project.
 
 Make the configuration with MySQL connection and use Sequelize ORM that you don't need to write query to do normal CRUD action.
@@ -85,14 +95,16 @@ const sequelize = new Sequelize('database', 'username', 'password', {
 });
 ```
 
-<br />
+\
 
-#### Step 3 - Controller
+
+**Step 3 - Controller**
 
 Then use Sequelize CRUD methods
-- exports.create (POST)
-- exports.findAll (GET)
-- exports.findOne (GET with name)
+
+* exports.create (POST)
+* exports.findAll (GET)
+* exports.findOne (GET with name)
 
 ```javascript
 exports.create = (req, res) => {
@@ -155,9 +167,10 @@ exports.findOne = (req, res) => {
 };
 ```
 
-<br />
+\
 
-#### Step 4 - Setup routes 
+
+**Step 4 - Setup routes**
 
 ```javascript
 module.exports = app => {
