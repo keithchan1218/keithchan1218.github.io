@@ -9,7 +9,6 @@ This is a page for my code snippet notes.
 
 ## Python
 
-````python
 ```python
 import paramiko
 import getpass
@@ -70,4 +69,3 @@ try:
 except Exception as e:
     print("Exception:", str(e))
 ```
-````
